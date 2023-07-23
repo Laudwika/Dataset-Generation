@@ -2,10 +2,10 @@
 Large Scale Dataset Generation for Face Recognition Applications.
 
 # Datasets
-Download the files [Texture Files](), [Segmentation Files](), [Light Files]() and put them in the root.
+Download the files [Texture Files](https://drive.google.com/drive/folders/1YNFWIvkAA_bqVOwRuBqaMKUq2j00zskd?usp=drive_link), [Segmentation Files](https://drive.google.com/drive/folders/1iOfkRUSQfS8caQMzIQNNjEcAxEFdq8IO?usp=drive_link), [Light Files](https://drive.google.com/drive/folders/1D41KHkGJgZX5DFojrhHkFATaulXzJ2wf?usp=drive_link) and put them in the root.
 
 # Models and Weights
-Download the [Models]() from the models folder and [Weights]() from the weights folder and put them in the /models and /weights in root.
+Download the [Models](https://drive.google.com/drive/folders/1r23bDC2fJGEKt5X3w1-P6iQkvcPmxMoP?usp=drive_link) from the models folder and [Weights](https://drive.google.com/drive/folders/1Cghp-y-OfUC29MpP6r9J3W2d-SzorIQk?usp=drive_link) from the weights folder and put them in the /models and /weights in root.
 
 # How to use
 We can either generate with random attributes or manually generate an image.
