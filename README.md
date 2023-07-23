@@ -17,21 +17,8 @@ In generate.py in main uncomment generate() on line 492, this will generate imag
 in generate.py in main, manual() function on line 493 will lead to the manual function in line 450. This is an example code of how to generate an image given constraints, this can be modifieable to be able to read txt files and the like.
 
 # Process Visualization
-## 1. Texture Infusion
-![texture](/test/textured.jpg)
-<img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" />
-
-## 2. Inversion
-![style](/test/style.jpg)
-
-## 3. Pose Transfer
-![pose](/test/pose.jpg)
-
-## 4. Image Enhancement
-![enhanced](/test/enhanced.jpg)
-
-## 5. Age Manipulation
-![age](/test/age.jpg)
+## Texture Infusion -> Inversion -> Pose Transfer -> Image Enhancement -> Age Manipulation
+<img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" /> <img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/style.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/pose.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/enhanced.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" />
 
 # Other Examples
 ## Custom Attribute Manipulation
