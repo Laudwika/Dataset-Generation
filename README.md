@@ -18,7 +18,7 @@ in generate.py in main, manual() function on line 493 will lead to the manual fu
 
 # Process Visualization
 ## Texture Infusion -> Inversion -> Pose Transfer -> Image Enhancement -> Age Manipulation
-<img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" /> <img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/style.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/pose.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/enhanced.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" />
+<img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/textured.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/style.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/pose.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/enhanced.jpg" width="256" height="256" /><img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" />
 
 # Other Examples
 ## Custom Attribute Manipulation
