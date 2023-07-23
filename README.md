@@ -19,6 +19,7 @@ in generate.py in main, manual() function on line 493 will lead to the manual fu
 # Process Visualization
 ## 1. Texture Infusion
 ![texture](/test/textured.jpg)
+<img src="https://github.com/Laudwika/Dataset-Generation/blob/main/test/age.jpg" width="256" height="256" />
 
 ## 2. Inversion
 ![style](/test/style.jpg)
@@ -34,13 +35,13 @@ in generate.py in main, manual() function on line 493 will lead to the manual fu
 
 # Other Examples
 ## Custom Attribute Manipulation
-![custom](/test/customized.png)
+![custom](/test/customized.jpg)
 
 ## Random Attribute Generation
-![attribute](/test/attributes.png)
+![attribute](/test/attributes.jpg)
 
 ## Variety of Different Identities
-![multiple](/test/multiple.png)
+![multiple](/test/multiple.jpg)
 
 ## Variety of Same Identities
-![same](/test/one.png)
+![same](/test/one.jpg)
