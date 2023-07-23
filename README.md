@@ -22,13 +22,13 @@ in generate.py in main, manual() function on line 493 will lead to the manual fu
 
 # Other Examples
 ## Custom Attribute Manipulation
-![custom](/test/customized.jpg)
+![custom](/test/customized.png)
 
 ## Random Attribute Generation
-![attribute](/test/attributes.jpg)
+![attribute](/test/attributes.png)
 
 ## Variety of Different Identities
-![multiple](/test/multiple.jpg)
+![multiple](/test/multiple.png)
 
 ## Variety of Same Identities
-![same](/test/one.jpg)
+![same](/test/one.png)
