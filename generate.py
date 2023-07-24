@@ -357,8 +357,19 @@ def relighting(image, mode = 'auto', loc = 0):
     elif mode == 'manual':
         light = loc
 
-    sh = np.loadtxt(os.path.join(light_folder, 'rotate_light_{:02d}.txt'.format(light)))
-    sh = sh[0:9]
+    base_sh_coeff = np.loadtxt(os.path.join(light_folder, 'rotate_light_{:02d}.txt'.format(light)))
+    base_sh_coeff = base_sh_coeff[0:9]
+
+    # Generate some random perturbations
+    perturbations = np.random.normal(scale=0.05, size=base_sh_coeff.shape)
+
+    # Make perturbations smaller for higher frequency coefficients
+    weights = np.linspace(1.0, 0.1, num=len(base_sh_coeff))
+    perturbations *= weights
+
+    # Apply perturbations to base coefficients
+    sh = base_sh_coeff + perturbations
+
     sh = sh * 0.7
     shading = get_shading(normal, sh)
     value = np.percentile(shading, 95)
@@ -380,10 +391,11 @@ def relighting(image, mode = 'auto', loc = 0):
     resultLab = cv2.cvtColor(Lab, cv2.COLOR_LAB2BGR)
     resultLab = cv2.resize(resultLab, (col, row))
     return Image.fromarray(resultLab)
+
     
 def pose_transfer(image, mode = 'auto', driving = ''):
     if mode == 'auto':
-        driving = os.path.join('real/real',random.choice(os.listdir('real/real')))
+        driving = os.path.join('textured data/real',random.choice(os.listdir('textured data/real')))
     elif mode == 'manual':
         driving = driving
     return eval(output = '', source = image,driving = driving)
@@ -423,7 +435,7 @@ def save_and_crop(image, uncropped, cropped):
 #Automated generation example
 def generate():
     mode = 'auto'
-    for j, imgs in enumerate(os.listdir('data/skin')):
+    for j, imgs in enumerate(os.listdir('segmentation data/skin')):
         if j < 0:
             pass
         # elif j == 7500:
@@ -434,7 +446,7 @@ def generate():
             seg_string = get_segmentation_map(i, imgs, mode = 'auto')
             textured_image = infuse_textures(seg_string, mode = 'auto')
             style_image = inversion(textured_image, 0.6)
-            for p in range(15):
+            for p in range(100):
                 light_image = relighting(style_image)
                 new_pose = pose_transfer(light_image, mode = 'auto')
                 image = Image.fromarray(new_pose.astype('uint8'), 'RGB')
@@ -469,6 +481,7 @@ def manual():
     style_image.save('test/style.jpg')
 
     light_image = relighting(style_image, mode = 'manual', loc = 1)
+    light_image.save('test/light.jpg')
 
     driving = 'textured data/real/0.jpg'
 
@@ -489,8 +502,9 @@ def manual():
 
 
 if __name__ == "__main__":
-    # generate()
-    manual()
+    #generate()
+    # manual()
+    pass
 
 
 
