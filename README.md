@@ -34,4 +34,4 @@ in generate.py in main, manual() function line 506 will lead to the manual funct
 ![same](/test/one.png)
 
 ## Repositories Used
-[Inversion](https://github.com/bryandlee/stylegan2-encoder-pytorch), [Relighting](https://github.com/zhhoper/DPR), [Pose Transfer](https://github.com/zhengkw18/face-vid2vid), [Image Enhancement](https://github.com/yangxy/GPEN/blob/main/README.md), [Age Manipulation](https://github.com/yuval-alaluf/SAM)
+[SPADE](https://github.com/NVlabs/SPADE), [Inversion](https://github.com/bryandlee/stylegan2-encoder-pytorch), [Relighting](https://github.com/zhhoper/DPR), [Pose Transfer](https://github.com/zhengkw18/face-vid2vid), [Image Enhancement](https://github.com/yangxy/GPEN/blob/main/README.md), [Age Manipulation](https://github.com/yuval-alaluf/SAM)
