@@ -11,10 +11,10 @@ Download the [Models](https://drive.google.com/drive/folders/1r23bDC2fJGEKt5X3w1
 We can either generate with random attributes or manually generate an image.
 
 ## Randomized Attributes
-In generate.py in main uncomment generate() on line 492, this will generate images from a combination of random attributes.
+In generate.py in main generate() function on line 505, this will generate images from a combination of random attributes.
 
 ## Controlled Attribute Generation
-in generate.py in main, manual() function on line 493 will lead to the manual function in line 450. This is an example code of how to generate an image given constraints; this can be modifiable to be able to read txt files and the like.
+in generate.py in main, manual() function line 506 will lead to the manual function in line 462. This is an example code of how to generate an image given constraints; this can be modifiable to be able to read files for generation.
 
 # Process Visualization
 ## Texture Infusion -> Inversion -> Relighting -> Pose Transfer -> Image Enhancement -> Age Manipulation
